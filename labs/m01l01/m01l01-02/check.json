@@ -1,0 +1,32 @@
+{
+  "lab": "m01l01-02",
+  "lesson": "m01l01",
+  "title": "The smallest useful manifest",
+  "mode": "checker",
+  "runner": "kubeconform",
+  "command": "kubeconform -strict -summary pod.yaml",
+  "main": "pod.yaml",
+  "files": [
+    "pod.yaml"
+  ],
+  "stdin": null,
+  "expected": null,
+  "grading": null,
+  "requires": [
+    "kubeconform"
+  ],
+  "tool": "kubeconform",
+  "commands": [
+    {
+      "id": "validate",
+      "label": "Validate",
+      "line": "kubeconform -strict -summary pod.yaml"
+    },
+    {
+      "id": "verbose",
+      "label": "Validate each resource",
+      "line": "kubeconform -strict -verbose -summary pod.yaml"
+    }
+  ],
+  "note": null
+}

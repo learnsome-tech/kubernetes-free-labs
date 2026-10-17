@@ -1,0 +1,32 @@
+{
+  "lab": "m01l05-03",
+  "lesson": "m01l05",
+  "title": "A namespaced manifest with a stable label",
+  "mode": "checker",
+  "runner": "kubeconform",
+  "command": "kubeconform -strict -summary m01-namespaced-web.yaml",
+  "main": "m01-namespaced-web.yaml",
+  "files": [
+    "m01-namespaced-web.yaml"
+  ],
+  "stdin": null,
+  "expected": null,
+  "grading": null,
+  "requires": [
+    "kubeconform"
+  ],
+  "tool": "kubeconform",
+  "commands": [
+    {
+      "id": "validate",
+      "label": "Validate",
+      "line": "kubeconform -strict -summary m01-namespaced-web.yaml"
+    },
+    {
+      "id": "verbose",
+      "label": "Validate each resource",
+      "line": "kubeconform -strict -verbose -summary m01-namespaced-web.yaml"
+    }
+  ],
+  "note": null
+}
